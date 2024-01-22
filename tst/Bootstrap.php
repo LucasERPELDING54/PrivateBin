@@ -15,7 +15,7 @@ if (!defined('PUBLIC_PATH')) {
     define('PUBLIC_PATH', '..');
 }
 if (!defined('PATH')) {
-    define('PATH', '..' . DIRECTORY_SEPARATOR);
+    define('PATH', '/app' . DIRECTORY_SEPARATOR);
 }
 if (!defined('CONF')) {
     define('CONF', PATH . 'cfg' . DIRECTORY_SEPARATOR . 'conf.php');
