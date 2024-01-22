@@ -12,7 +12,7 @@ error_reporting(E_ALL | E_STRICT);
 
 // change this, if your php files and data is outside of your webservers document root
 if (!defined('PUBLIC_PATH')) {
-    define('PUBLIC_PATH', '..');
+    define('PUBLIC_PATH', '/app');
 }
 if (!defined('PATH')) {
     define('PATH', '/app' . DIRECTORY_SEPARATOR);
