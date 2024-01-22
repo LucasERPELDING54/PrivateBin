@@ -27,10 +27,8 @@
 		"php" : "^7.3 || ^8.0",
 		"yzalis/identicon" : "2.0.0",
 		"mlocati/ip-lib" : "1.18.0",
-		"jdenticon/jdenticon": "1.0.2"
-	},
-	"suggest" : {
-		"google/cloud-storage" : "1.32.0",
+		"jdenticon/jdenticon": "1.0.2",
+		"google/cloud-storage" : "^1",
 		"aws/aws-sdk-php" : "3.275.1"
 	},
 	"require-dev" : {
