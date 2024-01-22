@@ -11,7 +11,7 @@ jobs:
       - uses: php-actions/composer@v6
 
       - name:
-        uses: php/actions/phpunit@master
+        uses: php-actions/phpunit@master
         with:
           version: 9.6
           bootstrap: vendor/autoload.php
