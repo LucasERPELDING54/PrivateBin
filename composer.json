@@ -29,7 +29,7 @@
 		"mlocati/ip-lib" : "1.18.0",
 		"jdenticon/jdenticon": "1.0.2",
 		"google/cloud-storage" : "^1",
-		"aws/aws-sdk-php" : "3.275.1"
+		"aws/aws-sdk-php" : "3.296.8"
 	},
 	"require-dev" : {
 		"phpunit/phpunit" : "^9"
