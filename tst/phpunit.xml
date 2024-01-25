@@ -9,7 +9,7 @@
     </exclude>
     <report>
       <cobertura outputFile="./coverage/coverage.cobertura.xml"/>
-      <html outputDirectory="log/php-coverage-report" lowUpperBound="50" highLowerBound="80"/>
+      <text outputFile="php://stdout"/>
     </report>
   </coverage>
   <testsuite name="PrivateBin Test Suite">
