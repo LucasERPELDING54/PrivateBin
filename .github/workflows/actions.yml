@@ -20,7 +20,7 @@ jobs:
           args: --coverage-text
 
       - name: Code Coverage Summary
-        uses: irongut/CodeCoverageSummary@v1.3.0z
+        uses: irongut/CodeCoverageSummary@v1.3.0
         with:
           filename: coverage.cobertura.xml
 
