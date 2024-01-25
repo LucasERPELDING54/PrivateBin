@@ -14,6 +14,7 @@ jobs:
         uses: php-actions/phpunit@master
         with:
           version: 9.6
+          php_extensions: "PDO", "GD"
           bootstrap: vendor/autoload.php
           configuration: tst/phpunit.xml
           args: --coverage-text
