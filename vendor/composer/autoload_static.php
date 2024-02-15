@@ -18,12 +18,12 @@ class ComposerStaticInitDontChange
         '0d59ee240a4cd96ddbb4ff164fccea4d' => __DIR__ . '/..' . '/symfony/polyfill-php73/bootstrap.php',
         '8825ede83f2f289127722d4e842cf7e8' => __DIR__ . '/..' . '/symfony/polyfill-intl-grapheme/bootstrap.php',
         'e69f7f6ee287b969198c3c9d6777bd38' => __DIR__ . '/..' . '/symfony/polyfill-intl-normalizer/bootstrap.php',
+        '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
         'b6b991a57620e2fb6b2f66f03fe9ddc2' => __DIR__ . '/..' . '/symfony/string/Resources/functions.php',
         'b067bc7112e384b61c701452d53a14a8' => __DIR__ . '/..' . '/mtdowling/jmespath.php/src/JmesPath.php',
-        '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
+        'ec07570ca5a812141189b1fa81503674' => __DIR__ . '/..' . '/phpunit/phpunit/src/Framework/Assert/Functions.php',
         '8a9dc1de0ca7e01f3e08231539562f61' => __DIR__ . '/..' . '/aws/aws-sdk-php/src/functions.php',
         '9b38cf48e83f5d8f60375221cd213eee' => __DIR__ . '/..' . '/phpstan/phpstan/bootstrap.php',
-        'ec07570ca5a812141189b1fa81503674' => __DIR__ . '/..' . '/phpunit/phpunit/src/Framework/Assert/Functions.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -48,6 +48,7 @@ class ComposerStaticInitDontChange
             'Symfony\\Component\\DependencyInjection\\' => 38,
             'Symfony\\Component\\Console\\' => 26,
             'Symfony\\Component\\Config\\' => 25,
+            'Soyhuce\\PhpunitToCobertura\\' => 27,
         ),
         'R' => 
         array (
@@ -190,6 +191,10 @@ class ComposerStaticInitDontChange
         'Symfony\\Component\\Config\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/config',
+        ),
+        'Soyhuce\\PhpunitToCobertura\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/soyhuce/phpunit-to-cobertura/src',
         ),
         'Rize\\' => 
         array (
@@ -3719,6 +3724,26 @@ class ComposerStaticInitDontChange
         'SebastianBergmann\\Type\\UnknownType' => __DIR__ . '/..' . '/sebastian/type/src/type/UnknownType.php',
         'SebastianBergmann\\Type\\VoidType' => __DIR__ . '/..' . '/sebastian/type/src/type/VoidType.php',
         'SebastianBergmann\\Version' => __DIR__ . '/..' . '/sebastian/version/src/Version.php',
+        'Soyhuce\\PhpunitToCobertura\\Cobertura\\CoberturaClass' => __DIR__ . '/..' . '/soyhuce/phpunit-to-cobertura/src/Cobertura/CoberturaClass.php',
+        'Soyhuce\\PhpunitToCobertura\\Cobertura\\CoberturaDocument' => __DIR__ . '/..' . '/soyhuce/phpunit-to-cobertura/src/Cobertura/CoberturaDocument.php',
+        'Soyhuce\\PhpunitToCobertura\\Cobertura\\CoberturaMethod' => __DIR__ . '/..' . '/soyhuce/phpunit-to-cobertura/src/Cobertura/CoberturaMethod.php',
+        'Soyhuce\\PhpunitToCobertura\\Cobertura\\CoberturaPackage' => __DIR__ . '/..' . '/soyhuce/phpunit-to-cobertura/src/Cobertura/CoberturaPackage.php',
+        'Soyhuce\\PhpunitToCobertura\\Cobertura\\Translator' => __DIR__ . '/..' . '/soyhuce/phpunit-to-cobertura/src/Cobertura/Translator.php',
+        'Soyhuce\\PhpunitToCobertura\\Commands\\Command' => __DIR__ . '/..' . '/soyhuce/phpunit-to-cobertura/src/Commands/Command.php',
+        'Soyhuce\\PhpunitToCobertura\\Commands\\ConvertCommand' => __DIR__ . '/..' . '/soyhuce/phpunit-to-cobertura/src/Commands/ConvertCommand.php',
+        'Soyhuce\\PhpunitToCobertura\\Commands\\HelpCommand' => __DIR__ . '/..' . '/soyhuce/phpunit-to-cobertura/src/Commands/HelpCommand.php',
+        'Soyhuce\\PhpunitToCobertura\\Commands\\VersionCommand' => __DIR__ . '/..' . '/soyhuce/phpunit-to-cobertura/src/Commands/VersionCommand.php',
+        'Soyhuce\\PhpunitToCobertura\\Exceptions\\BadCall' => __DIR__ . '/..' . '/soyhuce/phpunit-to-cobertura/src/Exceptions/BadCall.php',
+        'Soyhuce\\PhpunitToCobertura\\Exceptions\\CannotCreateDirectory' => __DIR__ . '/..' . '/soyhuce/phpunit-to-cobertura/src/Exceptions/CannotCreateDirectory.php',
+        'Soyhuce\\PhpunitToCobertura\\Exceptions\\InputFileDoesNotExist' => __DIR__ . '/..' . '/soyhuce/phpunit-to-cobertura/src/Exceptions/InputFileDoesNotExist.php',
+        'Soyhuce\\PhpunitToCobertura\\Exceptions\\InputFileMustBePhpCodeCoverage' => __DIR__ . '/..' . '/soyhuce/phpunit-to-cobertura/src/Exceptions/InputFileMustBePhpCodeCoverage.php',
+        'Soyhuce\\PhpunitToCobertura\\Exceptions\\InputFileNotReadable' => __DIR__ . '/..' . '/soyhuce/phpunit-to-cobertura/src/Exceptions/InputFileNotReadable.php',
+        'Soyhuce\\PhpunitToCobertura\\Exceptions\\MalformedReportGenerated' => __DIR__ . '/..' . '/soyhuce/phpunit-to-cobertura/src/Exceptions/MalformedReportGenerated.php',
+        'Soyhuce\\PhpunitToCobertura\\Exceptions\\RenderableException' => __DIR__ . '/..' . '/soyhuce/phpunit-to-cobertura/src/Exceptions/RenderableException.php',
+        'Soyhuce\\PhpunitToCobertura\\Exceptions\\UnableToFindClassName' => __DIR__ . '/..' . '/soyhuce/phpunit-to-cobertura/src/Exceptions/UnableToFindClassName.php',
+        'Soyhuce\\PhpunitToCobertura\\Exceptions\\UnexpectedException' => __DIR__ . '/..' . '/soyhuce/phpunit-to-cobertura/src/Exceptions/UnexpectedException.php',
+        'Soyhuce\\PhpunitToCobertura\\Main' => __DIR__ . '/..' . '/soyhuce/phpunit-to-cobertura/src/Main.php',
+        'Soyhuce\\PhpunitToCobertura\\Support\\Utils' => __DIR__ . '/..' . '/soyhuce/phpunit-to-cobertura/src/Support/Utils.php',
         'Stringable' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Stringable.php',
         'Symfony\\Component\\Config\\Builder\\ClassBuilder' => __DIR__ . '/..' . '/symfony/config/Builder/ClassBuilder.php',
         'Symfony\\Component\\Config\\Builder\\ConfigBuilderGenerator' => __DIR__ . '/..' . '/symfony/config/Builder/ConfigBuilderGenerator.php',

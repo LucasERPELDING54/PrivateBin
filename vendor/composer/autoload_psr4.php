@@ -25,6 +25,7 @@ return array(
     'Symfony\\Component\\DependencyInjection\\' => array($vendorDir . '/symfony/dependency-injection'),
     'Symfony\\Component\\Console\\' => array($vendorDir . '/symfony/console'),
     'Symfony\\Component\\Config\\' => array($vendorDir . '/symfony/config'),
+    'Soyhuce\\PhpunitToCobertura\\' => array($vendorDir . '/soyhuce/phpunit-to-cobertura/src'),
     'Rize\\' => array($vendorDir . '/rize/uri-template/src/Rize'),
     'Psr\\Log\\' => array($vendorDir . '/psr/log/Psr/Log'),
     'Psr\\Http\\Message\\' => array($vendorDir . '/psr/http-factory/src', $vendorDir . '/psr/http-message/src'),

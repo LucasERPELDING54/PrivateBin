@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "952b4b63dd175ffd9d97e956075030c0",
+    "content-hash": "463856b3041a16b2ff699da12b54d4e9",
     "packages": [
         {
             "name": "aws/aws-crt-php",
@@ -4255,6 +4255,54 @@
                 }
             ],
             "time": "2020-09-28T06:39:44+00:00"
+        },
+        {
+            "name": "soyhuce/phpunit-to-cobertura",
+            "version": "0.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Soyhuce/phpunit-to-cobertura.git",
+                "reference": "48a0d319737738d11809f37b0382696cef3cdacd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Soyhuce/phpunit-to-cobertura/zipball/48a0d319737738d11809f37b0382696cef3cdacd",
+                "reference": "48a0d319737738d11809f37b0382696cef3cdacd",
+                "shasum": ""
+            },
+            "require": {
+                "ext-dom": "*",
+                "php": "^7.3",
+                "phpunit/phpunit": "^9.3"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.17"
+            },
+            "bin": [
+                "phpunit-to-cobertura"
+            ],
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Soyhuce\\PhpunitToCobertura\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Bastien Philippe",
+                    "email": "bastien.philippe@soyhuce.fr"
+                }
+            ],
+            "description": "Generates a cobertura code coverage report from phpunit",
+            "support": {
+                "issues": "https://github.com/Soyhuce/phpunit-to-cobertura/issues",
+                "source": "https://github.com/Soyhuce/phpunit-to-cobertura/tree/0.1.1"
+            },
+            "time": "2020-09-03T14:15:42+00:00"
         },
         {
             "name": "symfony/config",

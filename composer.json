@@ -36,7 +36,9 @@
 		"friendsofphp/php-cs-fixer": "^3.4",
 		"phpmd/phpmd": "^2.15",
 		"phpstan/phpstan": "^1.10",
-		"phpunit/phpunit": "^9"
+		"phpunit/php-code-coverage": "^9.2",
+		"phpunit/phpunit": "^9",
+		"soyhuce/phpunit-to-cobertura": "^0.1.1"
 	},
 	"autoload" : {
 		"psr-4" : {
