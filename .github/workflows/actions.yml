@@ -23,7 +23,7 @@ jobs:
       - name: Code Coverage Summary
         uses: irongut/CodeCoverageSummary@v1.3.0
         with:
-          filename: /app/tst/coverage/coverage.cobertura.xml
+          filename: tst/coverage.cobertura.xml
 
       #Docker push
       - name: Set up Docker Buildx
