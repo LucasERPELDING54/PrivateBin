@@ -1,0 +1,44 @@
+<?php
+/**
+ * PrivateBin.
+ *
+ * a zero-knowledge paste bin
+ *
+ * @see      https://github.com/PrivateBin/PrivateBin
+ *
+ * @copyright 2012 Sébastien SAUVAGE (sebsauvage.net)
+ * @license   https://www.opensource.org/licenses/zlib-license.php The zlib/libpng License
+ *
+ * @version   1.6.2
+ */
+
+namespace PrivateBin\Persistence;
+
+use PrivateBin\Data\AbstractData;
+
+/**
+ * AbstractPersistence.
+ *
+ * persists data in PHP files
+ */
+abstract class AbstractPersistence
+{
+    /**
+     * data storage to use to persist something.
+     *
+     * @static
+     *
+     * @var AbstractData
+     */
+    protected static $_store;
+
+    /**
+     * set the path.
+     *
+     * @static
+     */
+    public static function setStore(AbstractData $store)
+    {
+        self::$_store = $store;
+    }
+}
