@@ -21,35 +21,35 @@ jobs:
           args: --coverage-text
 
       - name: Code Coverage Summary
-        uses: irongut/CodeCoverageSummary@v1.3.0
-        with:
-          filename: /app/tst/coverage/coverage.cobertura.xml
+          uses: irongut/CodeCoverageSummary@v1.3.0
+          with:
+            filename: /app/tst/coverage/coverage.cobertura.xml
 
       #Docker push
       - name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v3
+          uses: docker/setup-buildx-action@v3
       - name: Login to Docker Hub
-        uses: docker/login-action@v3
-        with:
-          username: ${{ secrets.DOCKERHUB_USERNAME }}
-          password: ${{ secrets.DOCKERHUB_TOKEN }}
+          uses: docker/login-action@v3
+          with:
+            username: ${{ secrets.DOCKERHUB_USERNAME }}
+            password: ${{ secrets.DOCKERHUB_TOKEN }}
       - name: Build and push
-        uses: docker/build-push-action@v5
-        with:
-          push: true
-          tags: luk1/dacs_bin:latest  
+          uses: docker/build-push-action@v5
+          with:
+            push: true
+            tags: luk1/dacs_bin:latest  
 
       #EB deploy
       - name: Generate deployment package
-      run: zip -r dacs_bin.zip . -x '*.git*'
+          run: zip -r dacs_bin.zip . -x '*.git*'
 
       - name: Deploy to EB
-        uses: einaregilsson/beanstalk-deploy@v21
-        with:
-          aws_access_key: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          application_name: cli_private_bin
-          environment_name: my-env
-          region: eu-west-9
-          deployment_package: dacs_bin.zip
+          uses: einaregilsson/beanstalk-deploy@v21
+          with:
+            aws_access_key: ${{ secrets.AWS_ACCESS_KEY_ID }}
+            aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+            application_name: cli_private_bin
+            environment_name: my-env
+            region: eu-west-9
+            deployment_package: dacs_bin.zip
 
