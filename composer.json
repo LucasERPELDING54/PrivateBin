@@ -25,7 +25,7 @@
 	},
 	"require" : {
 		"php": "^7.3 || ^8.0",
-		"aws/aws-sdk-php": "3.275.1",
+		"aws/aws-sdk-php": "3.301.7",
 		"google/cloud-storage": "^1",
 		"jdenticon/jdenticon": "1.0.2",
 		"mlocati/ip-lib": "1.18.0",
